@@ -17,5 +17,4 @@ module just_pass_sc2sv (
 	output bool_o;
 	output [data_width-1:0] data_o;
 
-
 endmodule
