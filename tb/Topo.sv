@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-`include "../SystemC/wrapper/just_pass_sc2sv.sv"
+`include "../systemc/wrapper/just_pass_sc2sv.sv"
 
 module Topo ();
 

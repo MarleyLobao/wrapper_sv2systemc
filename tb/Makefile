@@ -1,6 +1,6 @@
-SYSTEMC_PATH = ../SystemC/
-SYSTEMC_CPP = ../SystemC/wrapper/just_pass_sc2sv.cpp \
-		       ../SystemC/arch/just_pass_arch.cpp
+SYSTEMC_PATH = ../systemc/
+SYSTEMC_CPP  = ../systemc/wrapper/just_pass_sc2sv.cpp \
+               ../systemc/arch/just_pass_arch.cpp
 
 RTL = ../rtl/Just_Pass.sv
 TOP = ./Topo.sv
@@ -13,4 +13,4 @@ sim:
 	-input shm.tcl
 
 clean:
-	rm -rf INCA_libs waves.shm cov_work/ *.history *.log *.key mdv.log imc.log imc.key ncvlog_*.err *.trn *.dsn .bpad/ .simvision/ simvision* xcelium.d .reinvoke.sim simv.daidir *.so *.o *.err
+	rm -rf INCA_libs waves.shm *.so *.o *.history *.log *.key *.err *.trn *.dsn .bpad/ .simvision/ simvision* xcelium.d .reinvoke.sim simv.daidir
